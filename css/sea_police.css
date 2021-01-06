@@ -1,0 +1,182 @@
+        *{
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+            .return{
+        position: absolute;
+        left: 1178px;
+        top: 20px;
+        z-index: 999;
+    }
+    .return input{
+        background-color: rgba(169,169,169,0.4);
+        width: 50px;
+        height: 20px;
+    }
+
+        h1{
+            position: absolute;
+            top:20px;
+            left: 465px;
+            z-index: 100;
+            color: white;
+        }
+        .box{
+            position: relative;
+            background-color: rgb(87,8,10);  
+            height: 700px;  
+        }
+        .content{
+            width: 600px;
+            height: 600px;
+        }
+        .box1{
+            position: absolute;
+            top: -200px;
+            left: 0px;
+            transform: rotate(360deg);
+            transition: all 2s;
+            width: 200px;
+            height: 200px;      
+        }
+        .box1 img{
+            width: 200px;
+            height: 200px;            
+        }
+        .content:hover .box1{
+            top: 80px;
+            left: 325px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            position:absolute;
+            top: -200px;
+            left: 800px;
+            transform: rotate(360deg);
+            transition: all 2s;
+            transform-origin: bottom center;
+        }  
+        .box2 img{
+            width: 200px;
+            height: 200px;
+        }
+        .content:hover .box2{
+            top: 80px;
+            left: 527px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            position:absolute;
+            top: -280px;
+            left: 1100px; 
+            transform: rotate(360deg);
+            transition: all 2s;            
+        }
+        .box3 img{
+            width: 200px;
+            height: 200px;
+        }
+        .content:hover .box3{
+            top: 80px;
+            left: 729px;
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            position:absolute;
+            left: 300px;
+            bottom: -200px;  
+            transform: rotate(360deg);
+            transition: all 2s;                 
+        }
+        .box4 img{
+            width: 200px;
+            height: 200px;
+        }
+        .content:hover .box4{
+            top: 240px;
+            left: 325px;
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            position:absolute;
+            top: 240px;
+            left: 527px;
+        }
+        .box5 img{
+            width: 200px;
+            height: 200px;
+        }
+        .box6{
+            width: 200px;
+            height: 200px;
+            position:absolute;
+            bottom: -200px;
+            left: 425px;
+            transform: rotate(360deg);
+            transition: all 2s; 
+        } 
+        .content:hover .box6{
+            top: 240px;
+            left: 729px;
+        }
+        .box6 img{
+            width: 200px;
+            height: 200px;
+        }
+        .box7{
+            width: 200px;
+            height: 200px;
+            position:absolute;
+            top: 125px;
+            right: -200px;
+            transform: rotate(360deg);
+            transition: all 2s; 
+        }
+        .box7 img{
+            width: 200px;
+            height: 200px;
+        }
+        .content:hover .box7{
+            top: 425px;
+            left: 325px;
+        }                  
+        .box8{
+            width: 200px;
+            height: 200px;
+            position:absolute;
+            top: 50px;
+            left: -200px;
+            transform: rotate(360deg);
+            transition: all 2s; 
+        } 
+        .box8 img{
+            width: 200px;
+            height: 200px;
+        }
+        .content:hover .box8{
+            top: 425px;
+            left: 527px;
+        }                
+        .box9{
+            width: 200px;
+            height: 200px;
+            position:absolute;
+            bottom: -200px;
+            left: 900px;
+            transform: rotate(360deg);
+            transition: all 2s; 
+        }
+        .box9 img{
+            width: 200px;
+            height: 200px;
+        }        
+        .content:hover .box9{
+            top: 425px;
+            left: 729px;
+        }     

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>作品介绍</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/about.css">
+
+    <!-- Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="banner">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="about.html">作品介绍</a></li>
+            <li><a href="message.html">关于我们</a></li>
+        </ul>
+    </div>
+
+    <div id="change">
+        <div id="change_1"></div>
+        <div id="change_2"></div>
+        <div id="change_3"></div>
+        <div id="change_4"></div>
+        <div id="change_5"></div>
+    </div>
+
+    <div class="content">
+      <h1>页面特点与课程心得</h1>
+        <ul>
+            <li>首先，我来介绍我的页面特点。</li>
+            <li>页面的开头设置了导航条，使得index页面、about页面、message页面可以很好的跳转。</li>
+            <li>index页面:①封面采用了@keyframes动画与transform属性。且建党99周年字体使用了渐变色。<br/>②随着页面滚动的导航条使用了同页面跳转的超链接，且采用了固定定位与导航条到了所属的某一部分时会变色。<br/>
+            ③插入了背景音乐。<br/>④第一部分（不忘初心），图片采用了轮播图的形式，文字则采用以打字机形式出现；<br/>第二部分（历史进程），采用时间轴的形式，当鼠标点击时间轴右侧的内容时，可查看详细的内容；<br/>第三部分（共同庆祝），点击图片或了解更多按钮可查看详情。</li>
+            <li>about页面：①右上角的颜色可点击，点击即可改变背景颜色。<br/>②用border边框将页面内容框起来。③使用了@keyframes动画。</li>
+            <li>message页面：①采用背景图片进行修饰。②利用form表单进行设计。<br/>③利用padding-top进行间隔每一个表单。<br/>④设置了获取验证码按钮。<br/>⑤联系我中可以跳转发邮箱。</li>
+            <li>其次，我将分享我的课程心得。</li>
+            <li>从大一到现在，逐渐从基础的HTML到HTML5、CSS3、甚至会自学一点JavaScript。</li>
+            <li>在这个过程中学到了很多，同时也收获了很多。</li>
+            <li>学这些真的是要细心，一个代码之差，出来的效果就会不一样。</li>
+            <li>我知道我的水平还有待提升，我会继续努力的~</li>
+            <li>很热爱代码！</li>
+            <li>最后，希望自己能一直坚持敲代码，我想成为前端工程师。</li>
+        </ul>
+    </div>
+
+   <audio src="../audio/清水淳一 - Bloom of Youth.mp3"  loop autoplay>
+
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+<script>
+    var change = document.getElementById('change');
+    var change_1 = document.getElementById('change_1');
+    var change_2 = document.getElementById('change_2');
+    var change_3 = document.getElementById('change_3');
+    var change_4 = document.getElementById('change_4');
+    var change_5 = document.getElementById('change_5');
+    change_1.onclick = function(){
+        change.style.backgroundColor = 'red';
+    }
+    change_2.onclick = function(){
+        change.style.backgroundColor = 'yellow';
+    }
+    change_3.onclick = function(){
+        change.style.backgroundColor = 'blue';
+    }
+    change_4.onclick = function(){
+        change.style.backgroundColor = 'green';
+    }
+    change_5.onclick = function(){
+        change.style.backgroundColor = 'transparent';
+    }
+</script>
+
+</html>

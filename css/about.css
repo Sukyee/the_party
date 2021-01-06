@@ -1,0 +1,86 @@
+       .banner{
+            position: relative;
+            z-index: 100;
+       }
+
+        #change{
+            width: 100%;
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            z-index: 99;
+        }
+        #change>div{
+            position: relative;
+            top: 50px;
+            float:right;
+            width: 30px;
+            height: 30px;
+            margin:10px;
+            border: 1px #333 solid;
+        }
+        #change_1{
+            background-color: red;
+        }
+        #change_2{
+            background-color: yellow;
+        }
+        #change_3{
+            background-color: blue;
+        }
+        #change_4{
+            background-color: green;
+        }   
+
+       .content{
+
+       }
+       @keyframes move{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+       }
+
+       /*个性化图标*/
+       .content{
+            position: relative;
+            z-index: 99;
+            top: 80px;
+            border:1px solid #ccc;
+            animation: move 5s;
+            transition: all 5s;   
+       }
+        .content h1 {/*标题样式*/
+            color:#5A5A5A;
+            height:45px;
+            line-height:55px;/*控制文本显示位置*/
+            /*以绝地定位方式实现块元素居中显示*/
+            position:absolute;
+            left:50%;
+            margin-left:-196px;
+            padding-left:50px;
+            z-index: 100;
+        }
+        .content ul {/*列表框样式*/
+            /*清除列表默认样式*/
+            list-style-type:none;
+            margin:90px 0 0 0;
+            padding:0;
+            clear:both;
+            text-align: left;/*恢复默认对齐方式*/
+        }
+       .content li {
+            line-height:1.5em;
+            margin:6px auto;
+            /*为列表项设计个性化的列表图标*/
+            font-size:14px;
+            background:url(images/move.gif) no-repeat left 3px;
+            padding-left:305px;
+       }
+

@@ -1,0 +1,470 @@
+    .container h1{
+	    width: 300px;
+	    font-size: 50px;
+	    background-image: 
+	    -webkit-gradient( linear, left top, right top, color-stop(0, #f22), 
+	    color-stop(0.15, #f2f), 
+	    color-stop(0.3, #22f), 
+	    color-stop(0.45, #2ff), 
+	    color-stop(0.6, #2f2),
+	    color-stop(0.75, #2f2), 
+	    color-stop(0.9, #ff2), 
+	    color-stop(1, #f22) );
+	    color: transparent;
+	    -webkit-background-clip: text;
+	    -moz-background-clip: text;
+	    -ms-background-clip: text;
+    }
+    .container ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    .container ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    .container ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    .container ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    .container ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    .container ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    .container ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    .container ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+
+
+    /*字体颜色*/
+    .container ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+	    background-color: rgb(162,11,21);
+	    border:1px solid rgb(162,11,21);
+    }
+
+  /*字体逐渐变色*/
+    @keyframes scan {
+	0% {
+		background-size:0 100%;
+	}
+	100% {
+		background-size:100% 100%;
+	}
+    }
+    .introduction p{
+	    background:#7e7e7e -webkit-linear-gradient(left, #fff, #fff) no-repeat 0 0;
+	    -webkit-text-fill-color:transparent;
+	    -webkit-background-clip:text;
+	    background-size:0 100%;
+    }
+    .load{
+	    background-size:100% 100%;
+	    animation: scan 5s linear;
+    }
+
+
+   /* index封面*/
+   /*index封面之图片*/
+    .container .jumbotron{
+    	padding-left: 300px;
+    }
+    .container .jumbotron img{
+    	width: 412px;
+    	height: 250px;
+    	animation:move 1.8s ease-out forwards;
+    }
+    @keyframes move{
+        0% {
+        	transform:rotate(-30deg); transform-origin:125px 650px; opacity: 0;
+        }
+        20% {
+        	transform:rotate(10deg); transform-origin:125px 600px; opacity: 1;
+        }
+        30% {
+        	transform:rotate(-5deg);
+        }
+        38% {
+        	transform:rotate(0deg);
+        }
+        60% {
+        	transform: translate3d(0,0,0);  opacity: 1;
+        }
+        90% {
+        	transform: translate3d(-140px,0,0); 
+        }
+        100% {
+        	transform: translate3d(-140px,0,0);
+        }
+    }
+    /*index封面之文字*/
+    .container .jumbotron blockquote{
+    	animation: font 1.8s ease-out;
+    }
+    @keyframes font{
+        0% { 
+        	opacity: 0;
+        }
+        40% { 
+        	transform: translate3d(550px,0,0); opacity: 0;
+        }
+        60%{
+        	transform: translate3d(225px,0,0); opacity: 1;
+        }
+        80%{
+        	transform: translate3d(0,0,0); opacity: 1;
+        }
+        100% { transform: translate3d(0,0,0); opacity: 1; 
+        }
+    }
+    blockquote h1{
+    	animation: title 5s infinite;
+    }
+    @keyframes title{
+        0% { 
+        	background-position: 0 0;
+        }
+        100% { 
+        	background-position: 0 -76px;
+        }
+    }
+ 
+    h1{
+        z-index:1;
+        background: url(images/bg.png) repeat-y;
+        animation: title 1.2s linear;
+        animation-iteration-count:infinite;
+    }
+
+    /*轮播图*/
+    body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{
+	    margin:0;
+	    padding:0;
+    }
+    address,cite,dfn,em,var{
+    	font-style:normal;
+    }
+    code,kbd,pre,samp{
+    	font-family:courier new,courier,monospace;
+    }
+    ul,ol{
+    	list-style:none;
+    }
+    a{
+    	text-decoration:none;
+    }
+    a:hover{
+    	text-decoration:none;
+    }
+    sup{
+    	vertical-align:text-top;
+    }
+    sub{
+    	vertical-align:text-bottom;
+    }
+    legend{
+    	color:#000;
+    }
+    fieldset,img{
+    	border:0;
+    }
+    button,input,select,textarea{
+    	font-size:100%;
+    }
+    table{
+    	border-collapse:collapse;
+    	border-spacing:0;
+    }
+    .clear{
+    	clear: both;
+    	float: none;
+    	height: 0;
+    	overflow: hidden;
+    }
+    #container{
+    	width: 900px; 
+    	height: 600px; 
+    	overflow: hidden; 
+    	position: relative; 
+    }
+    #list{
+    	width: 4200px; 
+    	height: 600px; 
+    	position: absolute; 
+    	z-index: 1;
+    }
+    #list img{
+    	float: left;
+    	width: 900px; 
+    	height: 600px;
+    }
+    #buttons {
+        position: absolute; 
+        height: 10px; 
+        width: 100px;
+        z-index: 2; 
+        bottom: 30px; 
+        left: 421px;
+    }
+    #buttons span {
+        cursor: pointer; 
+        float: left;
+        border: 1px solid #fff; 
+        width: 10px; 
+        height: 10px; 
+        border-radius: 50%;
+        background: #333;
+        margin-right: 5px;}
+
+    #buttons .on {
+        background: orangered;
+    }
+    .arrow {
+        cursor: pointer; 
+        display: none; 
+        line-height: 39px; 
+        text-align: center; 
+        font-size: 36px; 
+        font-weight: bold; 
+        width: 40px; 
+        height: 40px; 
+        position: absolute; 
+        z-index: 2; 
+        top: 275px; 
+        background-color: RGBA(0,0,0,.3); 
+        color: #fff;}
+
+    .arrow:hover {
+        background-color: RGBA(0,0,0,.7);
+    }
+    #container:hover .arrow { 
+    	display: block;
+    }
+    #prev {
+        left: 20px;
+    }
+    #next {
+        right: 20px;
+    }
+
+    /* 逐字出现*/
+    #myDiv{
+        display: inline-block;
+        width:500px;
+        height:245px;
+        /*background-color:rgba(0,0,0,0.3);*/
+        word-wrap:break-word;
+        line-height:30px;
+        letter-spacing:3px;
+        padding-left:3px;
+        border-radius:5px;
+        -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+        -moz-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+        box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+        margin-left: 229px;
+        margin-top:16px;
+        font-size: 30px;
+    }
+
+    /*历史进程*/
+/* -------------------------------------
+ * For horizontal version, set the
+ * $vertical variable to false
+ * ------------------------------------- */
+/* -------------------------------------
+ * General Style
+ * ------------------------------------- */
+    @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+    .improve {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 5%;
+        font-size: 100%;
+        font-family: "Noto Sans", sans-serif;
+    }
+
+    .improve h2 {
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+    .improve #timeline {
+        list-style: none;
+        margin: 50px 0 30px 120px;
+        padding-left: 30px;
+        border-left: 8px solid rgb(162,11,21);
+    }
+    .improve #timeline li {
+        margin: 40px 0;
+        position: relative;
+    }
+    .improve #timeline p {
+        margin: 0 0 15px;
+    }
+
+    .improve .date {
+        margin-top: -10px;
+        top: 50%;
+        left: -158px;
+        font-size: 0.95em;
+        line-height: 20px;
+        position: absolute;
+    }
+
+    .improve .circle {
+        margin-top: -10px;
+        top: 50%;
+        left: -44px;
+        width: 10px;
+        height: 10px;
+        background: rgb(87,8,10);
+        border: 5px solid rgb(162,11,21);
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+    }
+
+    .improve .content {
+        max-height: 20px;
+        padding: 50px 20px 0;
+        border-color: transparent;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 0.5em;
+        position: relative;
+    }
+    .improve .content:before, .content:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border: solid transparent;
+        position: absolute;
+        pointer-events: none;
+        right: 100%;
+    }
+    .improve .content:before {
+        border-right-color: inherit;
+        border-width: 20px;
+        top: 50%;
+        margin-top: -20px;
+    }
+    .improve .content:after {
+        border-right-color: rgb(162,11,21);
+        border-width: 17px;
+        top: 50%;
+        margin-top: -17px;
+    }
+    .improve .content p {
+        max-height: 0;
+        color: transparent;
+        text-align: justify;
+        word-break: break-word;
+        hyphens: auto;
+        overflow: hidden;
+    }
+
+    .improve label {
+        font-size: 1.3em;
+        position: absolute;
+        z-index: 100;
+        cursor: pointer;
+        top: 20px;
+        transition: transform 0.2s linear;
+    }
+
+    .improve .radio {
+        display: none;
+    }
+
+    .improve .radio:checked + .relative label {
+        cursor: auto;
+        transform: translateX(42px);
+    }
+    .improve .radio:checked + .relative .circle {
+        background: rgb(162,11,21);
+    }
+    .improve .radio:checked ~ .content {
+        max-height: 180px;
+        border-color:rgb(162,11,21);
+        margin-right: 20px;
+        transform: translateX(20px);
+        transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+    }
+    .improve .radio:checked ~ .content p {
+        max-height: 200px;
+        color: #5A5A5A;
+        transition: color 0.3s linear 0.3s;
+    }
+
+/* -------------------------------------
+ * mobile phones (vertical version only)
+ * ------------------------------------- */
+    @media screen and (max-width: 767px) {
+    #timeline {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+    }
+    #timeline li {
+        margin: 50px 0;
+    }
+
+    label {
+        width: 85%;
+        font-size: 1.1em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        transform: translateX(18px);
+    }
+
+    .content {
+        padding-top: 45px;
+        border-color: #eee9dc;
+    }
+    .content:before, .content:after {
+        border: solid transparent;
+        bottom: 100%;
+    }
+    .content:before {
+        border-bottom-color: inherit;
+        border-width: 17px;
+        top: -16px;
+        left: 50px;
+        margin-left: -17px;
+    }
+    .content:after {
+        border-bottom-color: #48b379;
+        border-width: 20px;
+        top: -20px;
+        left: 50px;
+        margin-left: -20px;
+    }
+    .content p {
+        font-size: 0.9em;
+        line-height: 1.4;
+    }
+
+    .circle, .date {
+        display: none;
+    }
+    }
+
